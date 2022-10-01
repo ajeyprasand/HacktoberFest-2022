@@ -1,0 +1,19 @@
+def calc(list):
+  if list[2]=='+':
+    return int(list[0])+int(list[1])
+  elif list[2]=='*':
+    return int(list[0])*int(list[1])
+  elif list[2]=='-':
+    return int(list[0])-int(list[1])
+  elif list[2]=='+':
+    return int(list[0])/int(list[1])
+  else:
+    print("Error")
+    return
+
+print("Welcome To Basic Calculator")
+print("First type operands and then operator with space seperated")
+ans=input()
+list=ans.split()
+ANS=calc(list)
+print(ANS)    
